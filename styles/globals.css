@@ -125,6 +125,31 @@ ul > li > ul > li > ul {
   min-width: 0;
 }
 
+ :root {
+  --background: oklch(1 0 0); /* #ffffff - pure white */
+  --foreground: oklch(0 0 0); /* #000000 - pure black */
+  --warning: oklch(0.84 0.16 84);
+  --warning-foreground: oklch(0.28 0.07 46);
+}
+
+.dark {
+  --background: oklch(0 0 0); /* #000000 - pure black */
+  --foreground: oklch(1 0 0); /* #ffffff - pure white */
+  --warning: oklch(0.41 0.11 46);
+  --warning-foreground: oklch(0.99 0.02 95);
+}
+
+/* Custom theme examples */
+.green {
+  --background: oklch(0.26 0.05 173);
+  --foreground: oklch(0.85 0.13 165);
+}
+
+.yellow {
+  --background: oklch(0.97 0.15 85);
+  --foreground: oklch(0.25 0.05 85);
+}
+
 
 
 

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ 
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1 {
+    @apply  text-4xl font-bold  tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply font-bold break-normal text-2xl md:text-4xl;
+  }
+  h3 {
+    @apply font-bold break-normal text-xl md:text-3xl;
+  }
+  h3 {
+    @apply font-bold break-normal text-lg md:text-2xl;
+  }
+  h4 {
+    @apply font-bold break-normal text-lg md:text-xl;
+  }
+  h5 {
+    @apply font-bold break-normal text-lg md:text-lg;
+  }
+  h6 {
+    @apply font-bold break-normal text-base md:text-lg;
+  }
+  
+
+
+}
+
+@layer components {
+  .component-spacing {
+    @apply max-w-6xl m-auto px-4;
+  }
+  .gen-spacing {
+    @apply mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16;
+  }
+
+  .app-first-spacing {
+    @apply pt-24 lg:pt-40;
+  }
+
+  .component-py {
+    @apply py-20;
+  }
+
+  .transition-ease {
+    @apply transition duration-150 ease-in-out;
+  }
+
+  .spacing-component-max-width {
+    @apply max-w-6xl m-auto px-4;
+  }
+
+  .spacing-component-margin {
+    @apply mb-10 mt-10;
+  }
+  .spacing-component-padding {
+    @apply pb-10 pt-10;
+  }
+  .spacing-component-margin-bottom {
+    @apply mb-10;
+  }
+  .spacing-component-padding-bottom {
+    @apply pb-10;
+  }
+}
+
+ol {
+  list-style-type: decimal !important;
+}
+
+ol > li > ol {
+  list-style-type: upper-alpha !important;
+}
+ol > li > ol > li > ol {
+  list-style-type: upper-roman !important;
+}
+
+ol > li > ol > li > ol > li > ol {
+  list-style-type: lower-alpha !important;
+}
+ol > li > ol > li > ol > li > ol > li > ol {
+  list-style-type: lower-roman !important;
+}
+
+ul {
+  list-style-type: disc !important;
+}
+
+ul > li > ul {
+  list-style-type: circle !important;
+}
+ul > li > ul > li > ul {
+  list-style-type: square !important;
+}
+
+#coral {
+  /* Change primary font */
+  --font-family-primary: "Verdana";
+  /* --palette-background-body: red !important; */
+  --palette-background-body:red !important;
+
+  /* Remove round corners */
+  --round-corners: 50px;
+  /* background-color: red !important; */
+
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+ :root {
+  --background: oklch(1 0 0); /* #ffffff - pure white */
+  --foreground: oklch(0 0 0); /* #000000 - pure black */
+  --warning: oklch(0.84 0.16 84);
+  --warning-foreground: oklch(0.28 0.07 46);
+}
+
+.dark {
+  --background: oklch(0 0 0); /* #000000 - pure black */
+  --foreground: oklch(1 0 0); /* #ffffff - pure white */
+  --warning: oklch(0.41 0.11 46);
+  --warning-foreground: oklch(0.99 0.02 95);
+}
+
+/* Custom theme examples */
+.green {
+  --background: oklch(0.26 0.05 173);
+  --foreground: oklch(0.85 0.13 165);
+}
+
+.yellow {
+  --background: oklch(0.97 0.15 85);
+  --foreground: oklch(0.25 0.05 85);
+}
+
+
+
+
+
+
